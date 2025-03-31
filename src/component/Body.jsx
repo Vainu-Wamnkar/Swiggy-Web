@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState, useTransition } from "react"
-import Section1 from "./HomePageSections/Section1.jsx"
-import Section2 from "./HomePageSections/Section2.jsx"
-import Section3 from "./HomepageSections/Section3.jsx"
+import TopSection from "./HomepageSections/TopSection.jsx"
+import MiddleSection from "./HomepageSections/MiddleSection.jsx"
+import EndSection from "./HomepageSections/EndSection.jsx"
 import "../index.css"
 import Simer from "./Simer.jsx"
 
@@ -41,9 +41,9 @@ function Body() {
       { 
          secThreeData.length?
         <div className='w-full scrollbar-hide z-10 overflow-x-hidden md:px-4 dark:bg-gray-900 dark:text-white'>
-          <Section1 secOneData={secOneData}/>
-          <Section2 secTwoData={secTwoData}/>
-          <Section3 secThreeData={secThreeData}/>   
+          <TopSection secOneData={secOneData}/>
+          <MiddleSection secTwoData={secTwoData}/>
+          <EndSection secThreeData={secThreeData}/>   
         </div>
         :<Simer/>
       }

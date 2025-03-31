@@ -3,7 +3,7 @@ import { MdStarRate } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { RxCross2 } from "react-icons/rx";
 
-function Section3({secThreeData}) {
+function EndSection({secThreeData}) {
   
   const [filterVal,setFilterVal]=useState(null)
   const [filteredData,setFilteredData]=useState([])
@@ -92,4 +92,4 @@ function Section3({secThreeData}) {
   )
 }
 
-export default Section3
+export default EndSection

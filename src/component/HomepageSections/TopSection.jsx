@@ -2,7 +2,7 @@ import { FaArrowLeft } from "react-icons/fa6"
 import { FaArrowRight } from "react-icons/fa6"
 import React, { useState } from 'react'
 
-function Section1({secOneData}) {
+function TopSection({secOneData}) {
  
     const [value,setValue]=useState(0)
    
@@ -50,4 +50,4 @@ function Section1({secOneData}) {
   )
 }
 
-export default Section1
+export default TopSection

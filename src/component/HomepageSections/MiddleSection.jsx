@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6"
 import TopRestorant from './TopRestorant.jsx';
 
 
-function Section2({secTwoData}) {
+function MiddleSection({secTwoData}) {
     const [value,setValue]=useState(0);
 
     // console.log(window.innerWidth);
@@ -65,4 +65,4 @@ function Section2({secTwoData}) {
     )
 }
 
-export default Section2
+export default MiddleSection

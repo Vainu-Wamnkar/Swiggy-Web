@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { FaArrowLeft } from "react-icons/fa6"
 import { FaArrowRight } from "react-icons/fa6"
-import TopRestorant from './TopRestorant';
+import TopRestorant from './TopRestorant.jsx';
 
 
 function Section2({secTwoData}) {

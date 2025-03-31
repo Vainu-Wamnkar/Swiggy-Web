@@ -7,7 +7,7 @@ import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart,clearCart} from '../../utils/cartSlice';
 import toast from 'react-hot-toast';
-import AddToCartBtn from '../AddToCartBtn';
+import AddToCartBtn from '../AddToCartBtn.jsx';
 
 
 function RecomondedDish({menuData,resInfo}) {

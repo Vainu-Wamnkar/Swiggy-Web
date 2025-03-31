@@ -8,8 +8,8 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { useSelector } from "react-redux";
-import SignInPage from "./SignInPage";
-import DarkMode from "./DarkMode/DarkMode";
+import SignInPage from "./SignInPage.jsx";
+import DarkMode from "./DarkMode/DarkMode.jsx";
 
 function Head({ visible, setVisible }) {
   const cartData = useSelector((state) => state.cartSlice.cartItems);

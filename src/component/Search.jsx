@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Dishes from './SearchComponent/Dishes';
-import SearchRestaurantData from './SearchComponent/SearchRestaurantData';
+import Dishes from './SearchComponent/Dishes.jsx';
+import SearchRestaurantData from './SearchComponent/SearchRestaurantData.jsx';
 import { FaSearch } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import "../index.css"

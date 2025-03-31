@@ -4,7 +4,7 @@ import { Link, useNavigate} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, removeToCart } from '../utils/cartSlice';
 import toast from 'react-hot-toast';
-import { SimerCart } from './Simer';
+import { SimerCart } from './Simer.jsx';
 
 function Cart() {
     // const {cartData,setCartData}=useContext(CartContext)

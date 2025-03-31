@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState, useTransition } from "react"
-import Section1 from "./HomePageSections/Section1"
-import Section2 from "./HomePageSections/Section2"
-import Section3 from "./HomepageSections/Section3"
+import Section1 from "./HomePageSections/Section1.jsx"
+import Section2 from "./HomePageSections/Section2.jsx"
+import Section3 from "./HomepageSections/Section3.jsx"
 import "../index.css"
-import Simer from "./Simer"
+import Simer from "./Simer.jsx"
 
 
 function Body() {

@@ -3,14 +3,14 @@ import { CartContext, DataContext } from './dataAPI/DataProvider'
 import { Route, Routes } from 'react-router-dom';
 import "../src/index.css"
 
-const Head =lazy(()=>import( './component/Head'))
-const Search=lazy(()=>import('./component/Search'))
-const Body = lazy(()=>import('./component/Body'))
-const RestaurantMenu=lazy(()=>import( './component/ResMenu/RestaurantMenu'));
-const SearchDishResMenu=lazy(()=> import('./component/ResMenu/SearchDishResMenu'));
-const Cart=lazy(()=>import('./component/Cart'))
-const SignInPage=lazy(()=>import('./component/SignInPage'));
-const ServiceUnrecheble=lazy(()=>import('./component/ServiceUnrecheble'));
+const Head =lazy(()=>import( './component/Head.jsx'))
+const Search=lazy(()=>import('./component/Search.jsx'))
+const Body = lazy(()=>import('./component/Body.jsx'))
+const RestaurantMenu=lazy(()=>import( './component/ResMenu/RestaurantMenu.jsx'));
+const SearchDishResMenu=lazy(()=> import('./component/ResMenu/SearchDishResMenu.jsx'));
+const Cart=lazy(()=>import('./component/Cart.jsx'))
+const SignInPage=lazy(()=>import('./component/SignInPage.jsx'));
+const ServiceUnrecheble=lazy(()=>import('./component/ServiceUnrecheble.jsx'));
 
 function App() {
 

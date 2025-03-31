@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IoArrowForward } from "react-icons/io5";
 import { IoStar } from "react-icons/io5";
 import { IoChevronForward } from "react-icons/io5";
-import AddToCartBtn from '../AddToCartBtn';
+import AddToCartBtn from '../AddToCartBtn.jsx';
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 

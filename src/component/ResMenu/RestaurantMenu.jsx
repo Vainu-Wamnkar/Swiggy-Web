@@ -1,13 +1,13 @@
-import DeliveryInfo from './DeliveryInfo';
-import DiscountOffer from './DiscountOffer';
+import DeliveryInfo from './DeliveryInfo.jsx';
+import DiscountOffer from './DiscountOffer.jsx';
 import { DataContext } from '../../dataAPI/DataProvider';
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import Recomonded from './RecomondedDish';
-import RecomondedDish from './RecomondedDish';
+// import Recomonded from './RecomondedDish.jsx';
+import RecomondedDish from './RecomondedDish.jsx';
 import MenuCircle from './MenuCircle';
-import ResmenuFooter from './ResmenuFooter';
-import { SimerResMenu } from '../Simer';
+import ResmenuFooter from './ResmenuFooter.jsx';
+import { SimerResMenu } from '../Simer.jsx';
 
 
 

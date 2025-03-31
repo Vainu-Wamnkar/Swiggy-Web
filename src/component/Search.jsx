@@ -28,7 +28,7 @@ function Search() {
     }
 
     async function fetchDishData(){
-        let data= await fetch(`${import.meta.env.VITE_BASE_URL}/restaurants/search/v3?lat=23.2214298&lng=77.41264&str=${searchQuery}&trackingId=f8ce79f0-7ecf-a508-82a5-e7599611a3a7&submitAction=ENTER&queryUniqueId=478adf29-39c7-a167-458a-423bb8f77d43`)
+        let data= await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=23.2214298&lng=77.41264&str=${searchQuery}&trackingId=f8ce79f0-7ecf-a508-82a5-e7599611a3a7&submitAction=ENTER&queryUniqueId=478adf29-39c7-a167-458a-423bb8f77d43`)
         let res=await data.json()
         setDishes(res?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards);
         setIsLoading(false)

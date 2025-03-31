@@ -14,7 +14,7 @@ function Body() {
 
 
       async function fetchHomeData() {
-        const data= await fetch(`${import.meta.env.VITE_BASE_URL}/restaurants/list/v5?lat=23.2599333&lng=77.412615&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`)
+        const data= await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2599333&lng=77.412615&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`)
         const res=await data.json();
         console.log(res);
         

@@ -25,7 +25,7 @@ function RestaurantMenu() {
     const [discountData,setDiscountData]=useState([])
 
     async function  fetchResMenuData () {
-        const data=await fetch(`${import.meta.env.VITE_BASE_URL}/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.2214298&lng=77.41264&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`)
+        const data=await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.2214298&lng=77.41264&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`)
         const res= await data.json();
 
         const rresInfo=res?.data?.cards?.find(data=>data?.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.Restaurant")?.card?.card?.info

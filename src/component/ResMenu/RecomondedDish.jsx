@@ -117,7 +117,7 @@ function RecomondedDish({menuData,resInfo}) {
           isDiffRes && 
           <div className={`w-[520px] bg-[#ffffff] border-2 h-[220px] px-6 py-8 shadow-lg bottom-8 fixed left-[33%] z-50  `}>
               <div>
-                  <h1 className='text-2xl font-bold '>Items already in cart</h1>
+                  <h1 className='text-2xl font-bold dark:text-black'>Items already in cart</h1>
                   <p className='text-gray-500 text-base mt-4'>Your cart contains items from another restourent. Would you like to reset your cart for adding  items for this restaurent?</p>
               </div>
               <div className='flex justify-between mt-4 '>

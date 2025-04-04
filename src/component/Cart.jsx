@@ -13,6 +13,7 @@ function Cart() {
     const dispatch=useDispatch()
     const navigate=useNavigate()
     const [value,setValue]=useState(false);
+    const resInfo=JSON.parse(localStorage.getItem("resInfo")) || ""
     
     // console.log(cartData); 
     
@@ -52,6 +53,15 @@ function Cart() {
       }
       toast.success("Order Placed")
     }
+
+
+    function handleBack(){
+      if(resInfo){
+        navigate(`/restaurantMenu/${resInfo.id}`)
+      }else{
+        navigate("/")
+      }
+    }
     
   return (
     <>
@@ -60,11 +70,15 @@ function Cart() {
     <div className='mt-28 md:w-[85%] dark:min-h-screen lg:w-[78%] mx-auto xl:w-[60%]'>
         
         <div className='flex justify-between px-6 '>
-           <Link to={`/restaurantMenu/100605`}><button className='border-2 px-4 py-1 rounded-md mb-2 bg-slate-100 active:bg-slate-300'>back</button></Link>
+           <button className='border-2 px-4 py-1 rounded-md mb-2 bg-slate-100 active:bg-slate-300' onClick={handleBack}>back</button>
            {
             cartData.length>0? <button onClick={handleClearCart} className='border-2 px-4 py-1 text-white rounded-md mb-2 bg-green-400 active:bg-green-600'>Clear Cart</button>:""
            }
         </div> 
+        <div className='flex items-start my-4 px-6 gap-4'>
+          <img className='w-64 h-64 rounded-sm' src={`https://media-assets.swiggy.com/swiggy/image/upload/${resInfo?.cloudinaryImageId} `} alt="" />
+          <p className='dark:text-white text-4xl border-b-4 border-white pb-2'>{resInfo?.name}</p>
+        </div>
 
         {
             cartData.length<=0?<h1 className='text-2xl text-center font-bold mt-20 text-gray-600'>Please Do Some Order...</h1>:
@@ -97,7 +111,7 @@ function Cart() {
     </div>
     :cartData.length>0?(<SimerCart/>):
      <div className='mt-28 md:w-[85%] lg:w-[78%] mx-auto xl:w-[60%] px-6 dark:min-h-screen'>
-       <Link to={`/restaurantMenu/100605`}><button className='border-2 px-4 py-1 rounded-md mb-2 bg-slate-100 active:bg-slate-300'>back</button></Link>
+       <button className='border-2 px-4 py-1 rounded-md mb-2 bg-slate-100 active:bg-slate-300' onClick={handleBack}>back</button>
        <h1 className='text-2xl text-center font-bold text-gray-600 mt-36'>Please Do Some Order...</h1>
      </div>
      
